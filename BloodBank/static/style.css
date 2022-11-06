@@ -2,9 +2,15 @@
 	top: 0;
 	height: 50px;
 }
+body{
+  
+  background-image: radial-gradient(#b80000, #4a0000) ;
+}
 .logo{
 	position: absolute;
 	margin-left: 55px;
+  margin-top: 10px;
+  padding-right: 10px;
 }
 h3{
 	position: absolute;
@@ -15,9 +21,11 @@ h3{
 }
 .login{
 	position: absolute;
-  margin-left: 77%;
+  margin-left: 70%;
+  color: white;
   margin-top: 16px;
 }
+
 
 a{
 	text-decoration: none;
@@ -28,27 +36,26 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #cc0000;
   margin-top: 56px;
   position: absolute;
   width: 100% ;
 }
 
 li {
-  float:right;
+  float:left;
 }
 
 li a {
       display: inline-block;
     color: white;
     text-align: center;
-    padding: 15px 82px;
+    padding: 15px 70px;
     text-decoration: none;
     font-size: 20px;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #370000;
 }
 
 .active {
@@ -129,6 +136,7 @@ h2{
 }
 .images{
   margin-top: 100px;
+
 }
 .table1
 {
@@ -469,4 +477,7 @@ h2{
   color: black;
   font-size: 25px;
   margin-top: 31%
+}
+.myslides{
+    width: 100%;
 }

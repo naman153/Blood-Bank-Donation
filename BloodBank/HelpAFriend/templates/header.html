@@ -11,7 +11,7 @@
 			<div class="logo">
 				<img src="{% static 'images/logo.png'%}" height="55px">
 			</div>
-				<h3>Help A Friend</h3>	
+				<h3 style="padding-right:20px">Help A Friend</h3>	
 			{% if request.session.fname %}
 				{% include 'user_home.html'%}
 			{% elif request.session.name %}
@@ -20,10 +20,13 @@
 				{% include 'header_login.html' %}
 			{% endif %}	
 			<ul>
- 				<li><a href="../aboutus">About Us</a></li>
-				<li><a href="../post_request/">Request</a></li>
-				<li><a href="../search">Search</a></li>
 				<li><a href="../index/">Home</a></li>
+				<li><a href="../search">Search Blood Bank</a></li>
+				<li><a href="../post_request/">Request Blood</a></li>
+ 				<li><a href="../aboutus">About Us</a></li>
+				
+				
+				
 			</ul>
 		</div>	
 	</div>

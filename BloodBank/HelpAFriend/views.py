@@ -1,15 +1,21 @@
-from django.shortcuts import render,render_to_response
+from django.shortcuts import render
 from dbconnection.models import *
 from django.http import HttpResponseRedirect 
 from django.template.context_processors import *
 from django.contrib.auth import authenticate, login
 from django.core.mail import send_mail
 from django.conf import settings
+from elastic_enterprise_search import AppSearch, EnterpriseSearch
+
 # Create your views here.
 
 from django.views import generic
 import smtplib
 import math, random 
+
+# ent_search = EnterpriseSearch("https://<...>.ent-search.us-central1.gcp.cloud.es.io",http_auth=("elastic", "XE9MwYxW3JeD3tUTWIgYtb3j"),)
+# ent_search.get_version()
+
 
 def Index(request):
 	# request_list=RequestDetails.objects.all()

@@ -25,7 +25,7 @@ SECRET_KEY = 'iw8)hzniv-@68f)p)4s6cxgwoi%j)m$y6!+sqah%ew(*^%t+wh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'BloodBank.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME' : 'ddn',
-        'USER' : 'ddn',
-        'PASSWORD' : 'ddn',
+        'NAME' : 'bbn',
+        'USER' : 'root',
+        'PASSWORD' : '',
         'HOST' : '127.0.0.1',
         'PORT' : '3306',
     }
